@@ -1,6 +1,7 @@
 .Food__card {
   display: inline-block;
   width: 300px;
+  max-height: 650px;
   overflow: hidden;
   margin: 7.5px;
   box-shadow: 0 0 2px 2px #bbb;
@@ -40,20 +41,31 @@
   line-height: 1.15em;
   vertical-align: bottom; }
 
+@media (max-width: 690px) {
+  .Food__card {
+    width: 100%;
+    display: block;
+    margin: 1.5em auto; }
+  .Food__card__info {
+    width: 100%; } }
+
 .fruit-hidden > .Food__card--fruit {
   width: 0;
+  max-height: 0;
   opacity: 0;
   box-shadow: none;
-  margin: 0; }
+  margin: 0 !important; }
 
 .vegetable-hidden > .Food__card--vegetable {
   width: 0;
+  max-height: 0;
   opacity: 0;
   box-shadow: none;
-  margin: 0; }
+  margin: 0 !important; }
 
 .meat-hidden > .Food__card--meat {
   width: 0;
+  max-height: 0;
   opacity: 0;
   box-shadow: none;
-  margin: 0; }
+  margin: 0 !important; }

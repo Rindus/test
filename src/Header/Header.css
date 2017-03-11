@@ -14,7 +14,10 @@
 @media (max-width: 690px) {
   .Header__brandName, .Header .Navbar {
     text-align: center;
-    float: none; } }
+    float: none;
+    line-height: 2em; }
+  .Header .Navbar {
+    margin-bottom: 1.5em; } }
 
 .Navbar__item {
   margin: 0 0.5em; }

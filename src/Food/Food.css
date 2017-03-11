@@ -5,6 +5,10 @@
   margin-right: -7.5px;
   text-align: center; }
 
+@media (max-width: 690px) {
+  .Food__list {
+    margin: 0; } }
+
 .Food__filters {
   margin-bottom: 1em; }
 

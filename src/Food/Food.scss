@@ -6,6 +6,9 @@
     margin-left: -($margin_foodcard / 2);
     margin-right: -($margin_foodcard / 2);
     text-align: center;
+    @media (max-width: 690px) {
+      margin: 0;
+    }
   }
   &__filters {
     margin-bottom: 1em;
@@ -29,4 +32,5 @@
       }
     }
   }
+
 }

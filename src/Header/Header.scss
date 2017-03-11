@@ -17,7 +17,11 @@
     &__brandName, .Navbar {
       text-align: center;
       float: none;
+      line-height: 2em;
 
+    }
+    .Navbar {
+      margin-bottom: 1.5em;
     }
   }
 }
