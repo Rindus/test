@@ -10,11 +10,17 @@ html, body {
   background: #c8c8c8;
   font-size: 13px;
 }
-
+$container_width: 1260px;
 .container {
-  max-width: 1260px;
+  max-width: $container_width;
   margin: 0 auto;
+  
+  @media (max-width: $container_width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .App {
-  padding: 60px 0;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }

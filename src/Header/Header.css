@@ -11,6 +11,11 @@
   line-height: 4.59em;
   text-align: right; }
 
+@media (max-width: 690px) {
+  .Header__brandName, .Header .Navbar {
+    text-align: center;
+    float: none; } }
+
 .Navbar__item {
   margin: 0 0.5em; }
 

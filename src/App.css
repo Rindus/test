@@ -13,5 +13,11 @@ html, body {
   max-width: 1260px;
   margin: 0 auto; }
 
+@media (max-width: 1260px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
 .App {
-  padding: 60px 0; }
+  padding-top: 30px;
+  padding-bottom: 60px; }
