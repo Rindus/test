@@ -1,0 +1,25 @@
+.Header {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  $title_size: 1.7em;
+  &__brandName {
+    float: left;
+    font-size: $title_size;
+  }
+  .Navbar {
+    line-height: $title_size * 2.7;
+    text-align: right;
+  }
+}
+
+.Navbar {
+
+  &__item {
+    margin: 0 0.5em;
+    &:last-child { margin-right: 0; }
+    &.is-active  { text-decoration: underline;}
+  }
+}

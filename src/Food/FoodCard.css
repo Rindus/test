@@ -1,0 +1,59 @@
+.Food__card {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+  margin: 7.5px;
+  box-shadow: 0 0 2px 2px #bbb;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.4s; }
+
+.Food__card:hover {
+  box-shadow: 0 0 2px 5px #aaa; }
+
+.Food__card__image {
+  height: 180px;
+  background-color: #494a4b; }
+
+.Food__card__info {
+  width: 300px;
+  background: white;
+  position: relative;
+  padding: 2em 1em;
+  line-height: 1.6em; }
+
+.Food__card__type {
+  position: absolute;
+  right: 1em;
+  top: 2em; }
+
+.Food__card__name {
+  font-size: 1.3em;
+  margin: 0 0 1.2em; }
+
+.Food__card__moreInfo {
+  margin: 2em 0 1em; }
+
+.Food__card__moreInfo__symbol {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.15em;
+  vertical-align: bottom; }
+
+.fruit-hidden > .Food__card--fruit {
+  width: 0;
+  opacity: 0;
+  box-shadow: none;
+  margin: 0; }
+
+.vegetable-hidden > .Food__card--vegetable {
+  width: 0;
+  opacity: 0;
+  box-shadow: none;
+  margin: 0; }
+
+.meat-hidden > .Food__card--meat {
+  width: 0;
+  opacity: 0;
+  box-shadow: none;
+  margin: 0; }

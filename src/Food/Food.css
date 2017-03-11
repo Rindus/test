@@ -1,0 +1,30 @@
+.Food__list {
+  box-sizing: content-box;
+  width: 100%;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  text-align: center; }
+
+.Food__filters {
+  margin-bottom: 1em; }
+
+.Food__filters__item {
+  margin: 0 0.5em;
+  cursor: pointer; }
+
+.Food__label {
+  display: inline-block;
+  border-radius: 1em;
+  color: white;
+  padding: 0 1em;
+  line-height: 1.6em;
+  vertical-align: middle; }
+
+.Food__label--fruit {
+  background-color: #f39200; }
+
+.Food__label--vegetable {
+  background-color: #2b9030; }
+
+.Food__label--meat {
+  background-color: #e73c01; }

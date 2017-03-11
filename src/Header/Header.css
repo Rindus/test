@@ -1,0 +1,21 @@
+.Header:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.Header__brandName {
+  float: left;
+  font-size: 1.7em; }
+
+.Header .Navbar {
+  line-height: 4.59em;
+  text-align: right; }
+
+.Navbar__item {
+  margin: 0 0.5em; }
+
+.Navbar__item:last-child {
+  margin-right: 0; }
+
+.Navbar__item.is-active {
+  text-decoration: underline; }

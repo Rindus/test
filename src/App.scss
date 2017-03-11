@@ -1,0 +1,20 @@
+* {
+  outline: none;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+html, body {
+  background: #c8c8c8;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.App {
+  padding: 60px 0;
+}

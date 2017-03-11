@@ -1,0 +1,32 @@
+@import "../Variables.scss";
+.Food {
+  &__list{
+    box-sizing: content-box;
+    width: 100%;
+    margin-left: -($margin_foodcard / 2);
+    margin-right: -($margin_foodcard / 2);
+    text-align: center;
+  }
+  &__filters {
+    margin-bottom: 1em;
+    
+    &__item {
+      margin: 0 0.5em;
+      cursor: pointer;
+    }
+  }
+  &__label {
+    display: inline-block;
+    border-radius: 1em;
+    color: white;
+    padding: 0 1em;
+    line-height: 1.6em;
+    vertical-align: middle;
+    
+    @each $label, $map in $food_type_list {
+      &--#{$label} {
+        background-color: map-get($map, color);
+      }
+    }
+  }
+}

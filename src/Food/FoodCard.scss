@@ -1,0 +1,62 @@
+@import "../Variables.scss";
+.Food__card {
+  $width: 300px;
+  display: inline-block;
+  width: $width;
+  overflow: hidden;
+  margin: ($margin_foodcard / 2);
+  box-shadow: 0 0 2px 2px #bbb;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.4s;
+  &:hover {
+    box-shadow: 0 0 2px 5px #aaa;
+    
+  }
+
+  &__image {
+    height: 180px;
+    background-color: #494a4b;
+  }
+
+  &__info {
+    width: $width;
+    background: white;
+    position: relative;
+    padding: 2em 1em;
+    line-height: 1.6em;
+    
+  }
+
+  &__type{
+    position: absolute;
+    right: 1em;
+    top: 2em;
+  }
+ 
+  &__name {
+    font-size: 1.3em;
+    margin: 0 0 1.2em;
+  }
+  
+  &__moreInfo {
+    margin: 2em 0 1em;
+
+    &__symbol {
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.15em;
+      vertical-align: bottom;
+    }
+    
+  }
+}
+
+    @each $label, $map in $food_type_list {
+      .#{$label}-hidden > .Food__card--#{$label} {
+        width: 0;
+        opacity:0;
+        box-shadow: none;
+        margin: 0;
+      }
+    }
